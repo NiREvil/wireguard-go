@@ -66,7 +66,7 @@ Automatic warp reserved field by default, add win32, include wintun.dll and othe
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  
 
 <p align="center">
-  <br><img src="https://github.com/NiREvil/wireguard-go/assets/126243832/497c1445-276f-4474-9b18-d71fe543f070" width="720px">
+  <br><img src="https://raw.githubusercontent.com/NiREvil/workers-cloudflare/main/Other/pics/warp-plus2.jpg" width="960px">
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  
 
