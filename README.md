@@ -17,8 +17,6 @@ $\color{orange} \Large \text{Features}$
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  
 
-$\color{orange} \Large \text{Table of content}$
-
 ## جدول مطالب
 - [نصب و اجرا](#نصب-و-اجرا)
   - [نکات مورد نیاز](#نکات-مورد-نیاز)
@@ -48,8 +46,6 @@ $\color{orange} \Large \text{Table of content}$
 ```
 
 </details>  
-
-
 
 
 
@@ -87,7 +83,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/NiREvil/wireguard-go/master/
 rm -rf .cache/warp-plus
 ```  
 
-رو بزنید تا کش‌ها پاکبشن سپس دوباره دستور warp رو اجرا کنید.  
+رو اجرا کنید تا فایل‌های کش‌ پاک حذف بشن و مجددا دستور warp رو اجرا کنید.  
 
 
 **اجرای مجدد:** بعد از نصب برای اجرای مجدد فقط کافیه که `warp` یا `usef` یا `warp-plus`رو وارد کنید. همش یکیه هیچ فرقی نداره.  
@@ -220,11 +216,11 @@ warp --cfon --country US -6
 
 
 
-- > اون US برای مثال بود می‌تونی هر لوکیشنی قرار بدی به جای اون. انتهای این صفحه لیست کامل لوکیشن‌ها قرار دارن
+> اون US برای مثال بود می‌تونی هر لوکیشنی قرار بدی به جای اون. انتهای این صفحه لیست کامل لوکیشن‌ها قرار دارن
+  >
+>  خلاصه اینکه یا انتخاب ورژن آی‌پی رو بسپر به وارپ‌پلاس یا که خودت هندل کن.
 
-- خلاصه اینکه یا انتخاب ورژن آی‌پی رو بسپر به وارپ‌پلاس یا که خودت هندل کن.  
-
-> [!NOTE]
+> [!CAUTION]
 > ولـی ولــــــی ممکنه انتخاب آی‌پی رو بسپاری دست خودش 
 
 و بیاد حتی ipv4 که مورد نطرت هست رو انتخاب کنه ولی از یه رنج شخمی، فرضا یکی دوماه پیش برای مخابرات هیشکدوم از آی‌پی ها از رنج 162 کار نمیکردن، فقط 188 اوکی بود، فک کن میومد از رنج 162 انتخاب میکرد ...!!!
@@ -257,21 +253,26 @@ warp -e IP:PORT
 
 بده بهش تا ممبعد وقتی استارت کردی وارپ رو از همین آی‌پی و پورت ک تو پروفایلت ذخیره شده استفاده کنه. 
 
-  
-  
+
+
+### بحث شیرین و مفصل اندپوینت اسکنرها
+> کلیک کن این پایین تا باز بشه این تاپیک
+
 
 <details>
-<summary> بحث مفصل و شیرین اندپوینت اسکنرها </summary>    
-    
+<summary> اسکنرها و تغییر آی‌پی وارپ </summary>      
 
-**تغییر آی‌پی:**  
 
-اولین اسکنرها، اسکنر پیمان هستش که آموزش مربوط به اون قبلا در [این پست](https://t.me/F_NiREvil/6305) به طور کامل قرار داده شده. [این تلگراف](https://telegra.ph/%D9%86%D8%AD%D9%88%D9%87-%D8%A7%D8%B3%DA%A9%D9%86-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A7%D9%86%D8%AF%D9%BE%D9%88%DB%8C%D9%86%D8%AA-%D9%85%D9%86%D8%A7%D8%B3%D8%A8-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%88%D8%A7%D8%B1%D9%BE-05-30-2) هم قشنگه برا توضیحش  
+#### اسکنر ییمان  
+
+اولینشون اسکنر پیمان هستش که آموزش مربوط به اون قبلا در [این پست](https://t.me/F_NiREvil/6305) به طور کامل قرار داده شده. [این تلگراف](https://telegra.ph/%D9%86%D8%AD%D9%88%D9%87-%D8%A7%D8%B3%DA%A9%D9%86-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A7%D9%86%D8%AF%D9%BE%D9%88%DB%8C%D9%86%D8%AA-%D9%85%D9%86%D8%A7%D8%B3%D8%A8-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%88%D8%A7%D8%B1%D9%BE-05-30-2) هم قشنگه برا توضیحش  
 
 ```POV-Ray SDL
 bash <(curl -fsSL https://raw.githubusercontent.com/Ptechgithub/warp/main/endip/install.sh)
 ```
 
+
+  
 بعد از دریافت کانفیگ از طریق گزینه چهار (wire-g) میتونیم با دستور زیر کانفیگمون رو تبدیل به پلاس بکنیم
   
 ```POV-Ray SDL
@@ -279,26 +280,27 @@ wire-g -l license
 ```
 از یکی از [این ربات‌ها](https://t.me/F_NiREvil/5271) بگیرید لایسنس رو.
 
+---
 
-
+#### اسکنر فسبیل شده خودمون  
 
 اینم اسکنر خودمون ک فسیل شده فراموشش کنید کلا
 
 ```POV-Ray SDL
 bash <(curl -fsSL https://raw.githubusercontent.com/NiREvil/warp/main/endip/install.sh)
 ```
+---  
 
-
-
+#### اسکنر حسین محسنی
   
 لینک مخزن اسکنر ویندوزی آی‌پی کلادفلر و وارپ از حسین محسنی از بچه های خوب روزگار
 
 ```POV-Ray SDL
 http://github.com/hossein-mohseni/EP-Scanner
 ```
+---  
 
-
-
+#### اسکنر عرشیا  
 
 و اما به به، این اسکنر عرشیاس نیم وجبه کلا این بچه خیلی باحاله کاراش، مثلا همین اسکنر از شیر مرغ داره تا جون آدمیزاد، اصن نگم برات، ببین آی‌پی وارپ اسکن میکنه با آی‌پی کلادفلر و تو خروجی اونو بر حسب استفاده در bpb یا پنل وحید فرید مرتب میکنه، کانفیگ وارپ میسازه حتی نوع سینگ‌باکس حتی برای کلاینت مهسا و هیدیفای و ویتوری و کلا یه چیز دیگه است.  
 توضیحات مورد نیاز رو از [مخزن گیت‌هاب](https://github.com/arshiacomplus/WarpScanner) خودشون بخونید.
@@ -308,25 +310,25 @@ http://github.com/hossein-mohseni/EP-Scanner
 bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/main/install.sh)
 ```
 
+---
 
-
-
+  #### اپ اسکنر چینی
 این اپلیکیشنم اسکنره هم آی‌پی کلادفلر داره هم وارپ، توسعه داده شده توسط 2dust توسعه دهنده کلاینت v2rayNG.
 
 [Related post link](https://t.me/F_NiREvil/6389?single)
 
+---  
 
-
-
+#### اسکنر آیفون و آی‌پد
   
 اینم نحوه اجرای اسکنر داخل IOS هستش، من دستورات رو نوشتم شما میتونی اسکریپت داخل دستور پنجم رو تغییر بدی و از هرکدوم که خواستی استفاده کنی.  
 
 
 [Related post link](https://t.me/F_NiREvil/5792)  
 
+---  
 
-
-
+#### اسکنر azavaxhu
 
 اینم اسکنره وارپ هستش ولی خروجی یه لینک میده بهت که توش چندتا کانفیگ وارپ ساخته با اون تعداد آی‌پی که خودت موقع شروع انتخاب کرده بودی، لینک که بهت میده واسه سرویس bash upload هستش، وی‌پی‌ان خاموش میتونید اد کنید تو هیدیفای.  
 
@@ -334,9 +336,10 @@ bash <(curl -fsSL https://raw.githubusercontent.com/arshiacomplus/WarpScanner/ma
 curl -sSL https://raw.githubusercontent.com/azavaxhuman/Quick_Warp_on_Warp/main/install.sh -o install.sh && chmod +x install.sh && bash install.sh
 ```
 
+---  
 
+  #### اسکنر ناشناس
   
-
 اینم یادم نیست چی بود فک کنم پرایوت کی و آدرس و reserved می‌ساخت زمون شاه که reserved مد نبود اصلا   
 
 ```POV-Ray SDL
@@ -353,7 +356,8 @@ curl -sL "https://api.zeroteam.top/warp?format=sing-box" | grep -Eo --color=neve
 > شاید ب کارت بیاد رنج آی‌پی و پورت‌های وارپ کلادفلر:
 
 **Cloudflare warp IP ranges**
-```robots.txt
+
+```CSS
 162.159.192.0/24
 162.159.193.0/24 
 162.159.195.0/24
@@ -364,6 +368,7 @@ curl -sL "https://api.zeroteam.top/warp?format=sing-box" | grep -Eo --color=neve
 ```
 
 **Ports**
+
 ```CSS
 500-854-859-864-878-880-890-891-894-903-908-928-934-939-942-943-945-946,955-968-987-988-1002-1010-1014-1018-1070-1074-1180-1387-1701-1843-2371-2408-2506-3138-3476-3581-3854-4177-4198-4233-4500-5279-5956-7103-7152-7156-7281-7559-8319-8742-8854-8886
 ```
@@ -377,7 +382,7 @@ curl -sL "https://api.zeroteam.top/warp?format=sing-box" | grep -Eo --color=neve
 >
 >  **with Single Command install**
 
-```POV-Ray SDL
+```CSS
 bash <(curl -fsSL https://raw.githubusercontent.com/NiREvil/wireguard-go/master/termux.sh)
 ```
 
@@ -387,7 +392,7 @@ https://github.com/NiREvil/wireguard-go/assets/126243832/458edbef-1053-4605-9afd
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 **$\color{lightblue} \large \text{Part 2:}$**
-> **with: `warp --gool`**
+> **Run Warp ON Warp (gool) with: `warp --gool`**
 
 https://github.com/NiREvil/wireguard-go/assets/126243832/07aa5d18-c4b1-43fb-9814-b23ac730afa9
 
@@ -396,7 +401,7 @@ https://github.com/NiREvil/wireguard-go/assets/126243832/07aa5d18-c4b1-43fb-9814
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 **$\color{lightblue} \large \text{Part 3:}$**
-> **with: `warp --cfon --country EE`**
+> **Run psiphon with: `warp --cfon --country US`**
 
 https://github.com/NiREvil/wireguard-go/assets/126243832/5054de35-e798-4603-ba7b-5c0accc0da07
 
@@ -442,6 +447,7 @@ FLAGS
 ```
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
+
 ## کد اختصاری کشورها  
 $\color{orange} \Large \text{Country Codes for Psiphon}$
 
@@ -480,7 +486,7 @@ $\color{orange} \Large \text{Country Codes for Psiphon}$
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 ## بخش دانلود ترماکس  
-$\color{orange} \Large \text{Termux download BOX}$
+$\color{silver} \Large \text{Termux download BOX}$
 
 | Source | Download Link |
 |:--------:| -------------:|
@@ -493,7 +499,7 @@ $\color{orange} \Large \text{Termux download BOX}$
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
-$\color{orange} \large \text{Prerequisites}$
+$\color{silver} \large \text{Prerequisites}$
 - Download the latest version from the [releases](https://github.com/bepass-org/warp-plus/releases)
 - Basic understanding of VPN and proxy configurations
 
