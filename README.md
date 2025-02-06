@@ -1,5 +1,5 @@
 ## $\color{orange} \Large \text{WARP-PLUS}$
-$\color{silver} \large \text{Many thanks to Usef Ghobadi and dear Mark Pashmforoush}$
+$\color{silver} \large \text{Many thanks to dear mark and Usef}$
 
 $\color{gray} \large \text{Warp-Plus is an open-source implementation of Cloudflare's Warp, enhanced with Psiphon integration}$
 $\color{gray} \large \text{for circumventing censorship. This project aims to provide a robust and cross-platform VPN solution}$
@@ -20,17 +20,21 @@ $\color{orange} \Large \text{Features}$
 
 ## جدول مطالب
 - [نصب و اجرا](#نصب-و-اجرا)
-  - [نکات مورد نیاز](#نکات-مورد-نیاز)
-  - [توضیحات تکمیلی](#توضیحات-تکمیلی)
-- [رنج آیپی و پورت های وارپ](#رنج-آیپی-و-پورت-های-وارپ)
+- [نکات مهم](#نکات-مهم)
+- [توضیحات تکمیلی](#توضیحات-تکمیلی)
+- [رنج آیپی پورت وارپ](#رنج-آیپی-و-پورت-های-وارپ)
 - [ویدئوهای آموزش](#ویدئوهای-آموزش)
 - [راهنمای کلی دستورات](#راهنمای-کلی-دستورات)
 - [کد اختصاری کشورها](#کد-اختصاری-کشورها)
-- [بخش دانلود ترماکس](#بخش-دانلود-ترماکس)  
-<br>  
+- [بخش دانلود ترماکس](#بخش-دانلود-ترماکس)
+
+<br><br>  
+
+<p align="center">
+  <br><img src="https://github.com/user-attachments/assets/e33af2f3-9207-4401-b90a-ad08535dff30" width="960px">  
 
 <div dir="rtl">  
-<!-- TO DO: add more details later -->
+  <!-- TO DO: add more details later -->
 <details>
 <summary> v.1.2.5 تغییرات در نسخه </summary>  
 
@@ -72,11 +76,6 @@ Automatic warp reserved field by default, add win32, include wintun.dll and othe
 
 <br><br>  
 
-<p align="center">
-  <br><img src="http" width="960px">
-
-<br><br>  
-
 ## نصب و اجرا  
 $\color{orange} \Large \text{Getting Started with Termux}$
 
@@ -85,7 +84,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/NiREvil/wireguard-go/master/
 ```  
 <br><br>  
 
-## نکات مورد نیاز  
+## نکات مهم  
 
 **عدم اتصال**  
 اگه حس کردید کانکت نمیشه یا خطا میده دستور 
@@ -126,7 +125,10 @@ socks://Og==@127.0.0.1:8086#TERMUX+USEF
 
 **تبدیل اکانت وارپ به وارپ پلاس**  
 تبدیل وارپ به وارپ پلاس فعلا به رایگان ممکن نیست ، کلادفلر از چند ماه قبل حجم تمامی لایسنس هارو صفر کرد و دیگه رایگانش وجود نداره تا مدت نامعلوم، باید برای تبدیل به پلاس فقط لایسنس خریداری بشه.  
-انی وی. در روش تبدیل اکانت WARP به WARP plus گزینه `6` مقدار ID نمایش داده شده کپی و سپس آنرا وارد می‌کنید. پس از اجرای WARP دو اکانت برای شما ساخته شده که پس از انتخاب گزینه 6 خودکار مقدار ID هر دو اکانت را پیدا می‌کند و شما باید هر بار یکی را انتخاب کنید و یا میتوانید با انتخاب manual مقدار ID دیگری را وارد کنید (مثلا برای خود برنامه‌ی 1.1.1.1 یا جای دیگه) با این کار هر 20 ثانیه 1GB به اکانت شما اضافه شده و اکانت شما از حالت معمولی به پلاس تغییر می‌کنه.  
+
+انی وی. در روش تبدیل اکانت WARP به WARP plus گزینه `6` مقدار ID نمایش داده شده کپی و سپس آنرا وارد می‌کنید.  
+
+پس از اجرای WARP دو اکانت برای شما ساخته شده که پس از انتخاب گزینه 6 خودکار مقدار ID هر دو اکانت را پیدا می‌کند و شما باید هر بار یکی را انتخاب کنید و یا میتوانید با انتخاب manual مقدار ID دیگری را وارد کنید (مثلا برای خود برنامه‌ی 1.1.1.1 یا جای دیگه) با این کار هر 20 ثانیه 1GB به اکانت شما اضافه شده و اکانت شما از حالت معمولی به پلاس تغییر می‌کنه.  
 <br><br>  
 
 و همچنین می‌تونید برای تبدیل شدن وارپ به وارپ پلاس خیلی راحت‌تر مستقیما از [ربات‌های تلگرام] لایسنس وارپ دریافت و در دستور زبر جایگذاری و اجرا کنید.  
@@ -158,7 +160,7 @@ warp --scan
 ```  
 <br><br>  
 
-**پروکسی چین**  
+**پروکسی چین - Proxy Chain**  
 برای زنجیر کردن دو کانفیگ وارپ (proxy chain) باهم و تغییر آی‌پی خروجی به آی‌پی غیر ایران (عموما آلمان) از این دستور استفاده کنید.  
 
 ```POV-Ray SDL
@@ -323,7 +325,7 @@ curl -sL "https://api.zeroteam.top/warp?format=sing-box" | grep -Eo --color=neve
     
 </div>
 
-## رنج آی‌پی و پورت‌های وارپ  
+## رنج آی‌پی پورت‌ وارپ  
 شاید ب کارت بیاد رنج آی‌پی و پورت‌های وارپ کلادفلر:  
 
 **Cloudflare warp IP ranges**
